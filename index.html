@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meridian is a living, governed knowledge graph for the AI-driven development lifecycle. Shared architecture context for humans and coding agents.">
+  <meta name="theme-color" content="#0b1020">
+  <meta property="og:title" content="Meridian | Governed context for the agentic SDLC">
+  <meta property="og:description" content="A shared system map for humans and AI coding agents. Explore modules, contracts, ownership, and change impact across repositories.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://meridian-kb-aidlc.github.io/">
+  <title>Meridian | Governed context for the agentic SDLC</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Meridian home"><span class="brand-mark" aria-hidden="true">M</span> Meridian</a>
+    <nav aria-label="Main navigation">
+      <a href="#why">Why Meridian</a>
+      <a href="#how">How it works</a>
+      <a href="#build">Build with us</a>
+      <a class="nav-github" href="https://github.com/meridian-kb-aidlc/meridian">GitHub <span aria-hidden="true">&#8599;</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> KNOWLEDGE THAT CONNECTS THE CODE</p>
+        <h1 id="hero-title">Code moves fast.<br>Give it a <span>shared map.</span></h1>
+        <p class="hero-description">Meridian brings architecture, contracts, ownership, and change impact into one living knowledge graph. Governed context for humans and AI coding agents across the development lifecycle.</p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/meridian-kb-aidlc/meridian">Explore the project <span aria-hidden="true">&#8599;</span></a>
+          <a class="button secondary" href="#how">See how it works <span aria-hidden="true">&#8595;</span></a>
+        </div>
+        <p class="hero-note">Built collaboratively with GitHub Copilot. Designed for a multi-agent world.</p>
+      </div>
+      <div class="graph-card" role="img" aria-label="Illustrative knowledge graph: a checkout module connects to Orders API, Payments API, a REST contract, a datastore, and its owning team.">
+        <div class="card-topline"><span>THE CONNECTED SYSTEM</span><span class="tiny-pill">ILLUSTRATIVE</span></div>
+        <div class="graph-scene">
+          <svg class="graph-lines" viewBox="0 0 440 340" aria-hidden="true" preserveAspectRatio="none">
+            <path d="M220 168 L80 65 M220 168 L354 67 M220 168 L80 266 M220 168 L354 270 M220 168 L220 310"/>
+            <circle cx="220" cy="168" r="60"/><circle cx="220" cy="168" r="94"/>
+          </svg>
+          <div class="graph-node node-top-left"><small>MODULE</small><strong>Checkout</strong></div>
+          <div class="graph-node node-top-right"><small>CONTRACT</small><strong>Payments REST</strong></div>
+          <div class="graph-node node-center"><span aria-hidden="true">&#9678;</span><small>SERVICE</small><strong>Orders API</strong></div>
+          <div class="graph-node node-bottom-left"><small>OWNER</small><strong>Commerce team</strong></div>
+          <div class="graph-node node-bottom-right"><small>SERVICE</small><strong>Payments API</strong></div>
+          <div class="graph-node node-bottom"><small>DATASTORE</small><strong>Orders DB</strong></div>
+        </div>
+        <div class="graph-caption"><span class="status-dot" aria-hidden="true"></span> Relationships, not isolated repositories.</div>
+      </div>
+    </section>
+
+    <div class="principles container" aria-label="Project principles">
+      <span>Structured knowledge</span><span>Scoped access</span><span>Cross-repo impact</span><span>Agent-agnostic delivery</span>
+    </div>
+
+    <section id="why" class="section container" aria-labelledby="why-title">
+      <div class="section-heading">
+        <p class="eyebrow">01 / THE PROBLEM</p>
+        <h2 id="why-title">Faster code is not<br>the same as safer change.</h2>
+        <p>Coding agents accelerate implementation. The hard part is knowing what a change means for the rest of the system.</p>
+      </div>
+      <div class="cards four-columns">
+        <article class="feature-card"><span class="card-number">01</span><h3>No shared system map</h3><p>Repositories are connected in production, but agents and developers often explore them in isolation.</p></article>
+        <article class="feature-card"><span class="card-number">02</span><h3>Invisible blast radius</h3><p>A local change can affect downstream consumers, API contracts, and services owned by another team.</p></article>
+        <article class="feature-card"><span class="card-number">03</span><h3>Knowledge drift</h3><p>Architecture diagrams, ownership records, and wiki pages can fall behind the code they describe.</p></article>
+        <article class="feature-card"><span class="card-number">04</span><h3>Governance gaps</h3><p>People and agents need context scoped to the right organization, portfolio, and application.</p></article>
+      </div>
+    </section>
+
+    <section id="how" class="section solution-section" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">02 / THE SOLUTION</p>
+          <h2 id="how-title">A living, governed<br>knowledge graph.</h2>
+          <p>Declare architecture as structured facts. Compile a versioned system map. Deliver relevant context through the tools people and agents already use.</p>
+        </div>
+        <ol class="pipeline">
+          <li><span class="step">1</span><h3>Declare</h3><p>OKF YAML describes services, modules, contracts, datastores, teams, and conventions.</p><code>Git + Open Knowledge Format</code></li>
+          <li><span class="step">2</span><h3>Compile</h3><p>Validate facts and build relationships, impact sets, graph snapshots, and repository instructions.</p><code>Versioned knowledge builds</code></li>
+          <li><span class="step">3</span><h3>Connect</h3><p>Combine application knowledge at portfolio and organization scope to reveal cross-repo relationships.</p><code>Organization / Portfolio / Application</code></li>
+          <li><span class="step">4</span><h3>Use</h3><p>Agents query MCP tools; people explore the same knowledge through GraphQL and the web interface.</p><code>MCP + GraphQL + AGENTS.md</code></li>
+        </ol>
+        <div class="context-panel">
+          <div>
+            <p class="eyebrow">CONTEXT AT THE POINT OF CHANGE</p>
+            <h3>Ask better questions.<br>Start in the right place.</h3>
+            <p>Use module context to locate relevant ownership and conventions. Use impact queries to identify affected consumers. Read the implementation and verify the change.</p>
+          </div>
+          <div class="query-examples" aria-label="Example questions for Meridian">
+            <p><span aria-hidden="true">&#8594;</span> What module owns this file?</p>
+            <p><span aria-hidden="true">&#8594;</span> What depends on this contract?</p>
+            <p><span aria-hidden="true">&#8594;</span> Which conventions apply here?</p>
+            <p><span aria-hidden="true">&#8594;</span> What context was this agent given?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="value-title">
+      <div class="section-heading">
+        <p class="eyebrow">03 / THE VALUE</p>
+        <h2 id="value-title">Less rediscovery.<br>More informed development.</h2>
+      </div>
+      <div class="cards three-columns">
+        <article class="feature-card"><span class="card-label">DEVELOPMENT</span><h3>Make change impact visible</h3><p>Give reviewers and agents a shared view of touched modules, dependent services, contracts, and owners. PR advice informs review; it is not a blocking safety gate.</p></article>
+        <article class="feature-card"><span class="card-label">ONBOARDING &amp; AUDIT</span><h3>Make context traceable</h3><p>Explore structured architecture instead of piecing together disconnected documents. Versioned builds and audit records show the source of served context.</p></article>
+        <article class="feature-card"><span class="card-label">AI-DRIVEN DEVELOPMENT</span><h3>Measure the benefit</h3><p>The evaluation harness compares tasks with and without Meridian context, tracking correctness, time, token usage when reported, and change scope.</p></article>
+      </div>
+      <aside class="evidence-note"><strong>Evidence over promises.</strong> Focused context may reduce unnecessary exploration, but token-cost savings and quality improvements need real A/B measurements. OKF must stay accurate; agents still need to inspect code and run checks.</aside>
+    </section>
+
+    <section class="section container ecosystem-section" aria-labelledby="ecosystem-title">
+      <div><p class="eyebrow">OPEN AGENT ECOSYSTEM</p><h2 id="ecosystem-title">One context plane.<br>Different agents.</h2><p>Meridian uses MCP for live context, AGENTS.md for repository instructions, and a Goose adapter for evaluation. OKF is Meridian's own knowledge format.</p></div>
+      <div class="ecosystem-links">
+        <a href="https://modelcontextprotocol.io/"><strong>MCP</strong><span>Live, tool-based context <span aria-hidden="true">&#8599;</span></span></a>
+        <a href="https://agents.md/"><strong>AGENTS.md</strong><span>Portable repository guidance <span aria-hidden="true">&#8599;</span></span></a>
+        <a href="https://github.com/block/goose"><strong>Goose</strong><span>Evaluation agent integration <span aria-hidden="true">&#8599;</span></span></a>
+      </div>
+    </section>
+
+    <section id="build" class="section container" aria-labelledby="build-title">
+      <div class="contribute-panel">
+        <p class="eyebrow">BUILT WITH GITHUB COPILOT</p>
+        <h2 id="build-title">Explore it. Question it.<br>Help shape what comes next.</h2>
+        <p>Meridian was built collaboratively with GitHub Copilot across specifications, services, tests, infrastructure, and deployment. The source and demo repositories are public. Feedback, experiments, and contributions are welcome.</p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/meridian-kb-aidlc/meridian">View source <span aria-hidden="true">&#8599;</span></a>
+          <a class="button secondary" href="https://github.com/meridian-kb-aidlc/meridian/issues">Discuss an idea <span aria-hidden="true">&#8599;</span></a>
+        </div>
+      </div>
+      <div class="repositories">
+        <h3>Explore the demo estate</h3>
+        <p>A connected commerce example: structured knowledge plus three application repositories.</p>
+        <div class="repo-links">
+          <a href="https://github.com/meridian-kb-aidlc/meridian-okf-shop"><span>Knowledge</span><strong>meridian-okf-shop <span aria-hidden="true">&#8599;</span></strong></a>
+          <a href="https://github.com/meridian-kb-aidlc/meridian-storefront"><span>Frontend</span><strong>meridian-storefront <span aria-hidden="true">&#8599;</span></strong></a>
+          <a href="https://github.com/meridian-kb-aidlc/meridian-orders"><span>Orders</span><strong>meridian-orders <span aria-hidden="true">&#8599;</span></strong></a>
+          <a href="https://github.com/meridian-kb-aidlc/meridian-payments"><span>Payments</span><strong>meridian-payments <span aria-hidden="true">&#8599;</span></strong></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="container">
+    <a class="brand" href="#"><span class="brand-mark" aria-hidden="true">M</span> Meridian</a>
+    <p>Governed context for the agentic SDLC.</p>
+    <a href="https://github.com/meridian-kb-aidlc">GitHub organization <span aria-hidden="true">&#8599;</span></a>
+  </footer>
+</body>
+</html>
