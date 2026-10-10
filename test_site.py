@@ -69,7 +69,19 @@ class SiteTests(unittest.TestCase):
         self.assertIn("need real A/B measurements", self.html)
         self.assertIn("not a blocking safety gate", self.html)
         self.assertIn("ILLUSTRATIVE", self.html)
-        self.assertNotIn("open source", self.html.lower())
+        self.assertIn("Apache License 2.0", self.html)
+        self.assertIn("https://github.com/meridian-kb-aidlc/meridian/blob/main/LICENSE", self.document.links)
+
+    def test_ecosystem_status_and_affiliation(self):
+        self.assertIn("Meridian is not currently an AAIF-hosted project", self.html)
+        self.assertIn("no acceptance, affiliation, or endorsement is implied", self.html)
+        self.assertIn("not an AAIF standard", self.html)
+        for integration, status in (("mcp", "AVAILABLE"), ("agents-md", "AVAILABLE"),
+                                    ("agentgateway", "PLANNED"), ("goose", "VALIDATION PLANNED")):
+            card = self.html.split(f'data-integration="{integration}"', 1)[1].split("</article>", 1)[0]
+            self.assertIn(f">{status}</span>", card)
+        self.assertIn("not yet demonstrated", self.html)
+        self.assertIn("https://aaif.io/submit-a-project", self.document.links)
 
 
 if __name__ == "__main__":
